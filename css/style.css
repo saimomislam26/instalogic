@@ -12,14 +12,6 @@ body{
     position: relative;
     bottom:20px;
 }
-.main-nav{
-    overflow: hidden;
-    position: sticky;
-    /* top: 0;
-    bottom: 0; */
-    z-index: 3;
-    width: 100%;
-}
 
   .top-header{
       width: 100%;
@@ -38,6 +30,11 @@ body{
       
       margin-left: 20px;
   }
+
+  .icon img:hover{
+      transform: scale(1.3);
+      transition: all .3s linear;
+  }
    .location,.phone,.email{
     display: flex;
     align-items: center;
@@ -48,11 +45,19 @@ body{
       margin-bottom: 15px;
       
   }
+  .main-nav{
+    z-index: 3;
+    width: 100%;
+}
+
   .navbar{
     position : sticky;
     top : 0;
-  background-color: #32839c;
   }
+
+  .collapse .navbar-nav .nav-item .nav-link:hover{
+    color: #BF252B !important;
+}
 
   @media(max-width:1165px){
     .top-header{
@@ -71,7 +76,7 @@ body{
   @media(max-width:770px){
     .top-header{
         
-        background:linear-gradient(90deg, black 70%,#BF252B 30%);
+        background:linear-gradient(45deg, black 70%,#BF252B 30%);
         
     }
   }
@@ -461,6 +466,7 @@ body{
 .button-signup{
     margin: auto;
 }
+
 .signup{
     color: white; 
     /* width: auto; */
@@ -604,12 +610,12 @@ body{
 
 .footer-distributed .footer-icons a{
 	display: inline-block;
-	width: 35px;
-	height: 35px;
+	/* width: 35px;
+	height: 35px; */
 	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
-
+	/* background-color:  #33383b;
+	border-radius: 2px; */
+    margin-left:10px ;
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
@@ -617,6 +623,10 @@ body{
 
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+.footer-distributed .footer-icons a:hover{
+    transform: scale(1.5);
+    transition: all .3s linear;
 }
 
 /* Here is the code for Responsive Footer */
