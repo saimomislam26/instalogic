@@ -337,7 +337,7 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;}
-.parents{ width: 90vw; height: auto; 
+.parents{  height: auto; 
         display: flex;  justify-content: space-around;
         flex-wrap: wrap; transition: all 0.2 linear;
         background-color: rgba(43, 40, 40, 0.9);
@@ -356,6 +356,11 @@ body{
     flex:1 1 100px;
     /* margin-top: 20px; */
     margin-bottom: 10px;
+}
+.forscroll-btn{
+    background-color: rgba(43, 40, 40, 0.9);
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media (max-width: 768px){
